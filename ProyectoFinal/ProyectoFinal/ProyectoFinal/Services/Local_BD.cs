@@ -73,8 +73,8 @@ namespace ProyectoFinal.Services
             var usuario = from USUARIO in con.Table<Usuario>() select USUARIO;
 
             var consulta = from USUARIO in con.Table<Usuario>()
-                           where USUARIO.USR_CORREO == usu
-                           where USUARIO.USR_CONTRASENA == pass
+                           where USUARIO.Usr_Correo == usu
+                           where USUARIO.Usr_Password == pass
                            select USUARIO;
             return consulta.FirstOrDefault();
         }
@@ -82,14 +82,14 @@ namespace ProyectoFinal.Services
 
         public static Usuario sesionActiva;
 
-        public Boolean EsAdmin(string id)
-        {
-            var consulta = from USUARIO in con.Table<Usuario>()
-                           where USUARIO.USR_PERSONA_ID.Equals(id)
-                           select USUARIO;
-            sesionActiva = consulta.FirstOrDefault();
-            return consulta.FirstOrDefault().USR_ADMIN;
-        }
+        //public Boolean EsAdmin(string id)
+        //{
+        //    var consulta = from USUARIO in con.Table<Usuario>()
+        //                   where USUARIO.Usr_ID.Equals(id)
+        //                   select USUARIO;
+        //    sesionActiva = consulta.FirstOrDefault();
+        //    return consulta.FirstOrDefault().USR_ADMIN;
+        //}
 
         // Fin de los metodos del login
         ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -106,17 +106,16 @@ namespace ProyectoFinal.Services
         /// <param name="direccion">Dirección de su domicilio</param>
         /// <param name="correo">Correo del usuario</param>
         /// <param name="contrasena">Contraseña de la cuenta</param>
-        public void AgregarUsuario(string ID, string nombre, string ciudad, string direccion, string correo, string contrasena, Boolean EsAdmin)
+        public void AgregarUsuario(string nombre, string apellido1, string apellido2, int telefono, string correo, string contrasena)
         {
             con.Insert(new Usuario
             {
-                USR_PERSONA_ID = ID,
-                USR_NOMBRE = nombre,
-                USR_CIUDAD = ciudad,
-                USR_DIRECCION = direccion,
-                USR_CORREO = correo,
-                USR_CONTRASENA = contrasena,
-                USR_ADMIN = EsAdmin
+                Usr_Nombre = nombre,
+                Usr_Apellido1 = apellido1,
+                Usr_Apellido2 = apellido2,
+                Usr_Correo = correo,
+                Usr_Telefono = telefono,
+                Usr_Password = contrasena,
             });
         }
 
@@ -143,7 +142,7 @@ namespace ProyectoFinal.Services
         /// </summary>
         /// <param name="usuarioID">Cédula o número de pasaporte ingresado en el registro de la BD</param>
         /// <returns>EL usuario buscado</returns>
-        public Usuario BuscarUsuario(string usuarioID)
+        public Usuario BuscarUsuario(string usuarioCorreo)
         {
             var consulta = from USUARIO in con.Table<Usuario>()
                            where USUARIO.USR_PERSONA_ID.Equals(usuarioID)
