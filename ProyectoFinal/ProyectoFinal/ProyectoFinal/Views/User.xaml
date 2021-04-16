@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Chonete.Views.User">
+    
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+       
+        <Image Grid.Row="0" Source="user" VerticalOptions="Start" />
+        <!-- 2. Contact informaqtion frame-->
+        <StackLayout Grid.Row="0" BackgroundColor="White" VerticalOptions="Center">
+            <Frame CornerRadius="40" >
+                <Grid Padding="25,10,25,0" RowSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <!-- 3. Phone & message buttons-->
+                 
+
+                    <!-- 4. Contact information-->
+                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Roberto Hernandez" FontAttributes="Bold" FontSize="30"/>
+                    <Label Grid.Row="1" Grid.Column="0" Text="Alajuela" TextColor="#a5a2a2" FontSize="16"/>
+                    <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Padding="0,10,0,0" FontSize="16">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Email: " FontAttributes="Bold" />
+                                <Span Text=" robertoHernandez@hotmail.com"  />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <!--4. Contact information: Board inforation-->
+                    <Label Grid.Row="3" Grid.Column="0" Text="Compras"  />
+                    <Label Grid.Row="4" Grid.Column="0" Text="19" />
+
+                    <Label Grid.Row="3" Grid.Column="1" Text="Vendedores " />
+                    <Label Grid.Row="4" Grid.Column="1" Text="340" />
+
+                    
+
+                    <!--4. Contact information: Follow button-->
+                    <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" TextColor="White" BackgroundColor="#2193f3" Text="Editar" Margin="0,20,0,2" FontAttributes="Bold" FontSize="17" HeightRequest="45"/>
+
+
+                </Grid>
+                
+            </Frame>
+        </StackLayout>
+
+    </Grid>
+    
+
+</ContentPage>

@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "IUey8dGAcZIJdZuLYDK5KUOhGgal+VKopwVFdsULwT73VPOuSBoKibv0/J8yB8PWg9j5pMbrgDj0PufpaNwlXA==",
+  "dgSpecHash": "/zhCpjcF7y7UXn8e9H+Fi1XHLaSCW5T9occsAjN+4CYxOD0LVQGj8IKAFK6rNMrnw5w9xxBBlngNpvCBAz3N1g==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Repos\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+  "projectFilePath": "C:\\Users\\XPC\\Desktop\\Universidad\\Icuatri2021\\XamarinFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\twhit\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\twhit\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\twhit\\.nuget\\packages\\sqlite-net-pcl\\1.3.3\\sqlite-net-pcl.1.3.3.nupkg.sha512",
-    "C:\\Users\\twhit\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.5\\sqlitepclraw.bundle_green.1.1.5.nupkg.sha512",
-    "C:\\Users\\twhit\\.nuget\\packages\\sqlitepclraw.core\\1.1.5\\sqlitepclraw.core.1.1.5.nupkg.sha512",
-    "C:\\Users\\twhit\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+    "C:\\Users\\XPC\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\XPC\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\XPC\\.nuget\\packages\\sqlite-net-pcl\\1.3.3\\sqlite-net-pcl.1.3.3.nupkg.sha512",
+    "C:\\Users\\XPC\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.5\\sqlitepclraw.bundle_green.1.1.5.nupkg.sha512",
+    "C:\\Users\\XPC\\.nuget\\packages\\sqlitepclraw.core\\1.1.5\\sqlitepclraw.core.1.1.5.nupkg.sha512",
+    "C:\\Users\\XPC\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\XPC\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\XPC\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
   ],
   "logs": []
 }

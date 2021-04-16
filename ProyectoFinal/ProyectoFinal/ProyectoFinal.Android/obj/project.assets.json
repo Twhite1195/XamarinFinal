@@ -5291,24 +5291,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\twhit\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\XPC\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\Repos\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.Android\\ProyectoFinal.Android.csproj",
+      "projectUniqueName": "C:\\Users\\XPC\\Desktop\\Universidad\\Icuatri2021\\XamarinFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.Android\\ProyectoFinal.Android.csproj",
       "projectName": "ProyectoFinal.Android",
-      "projectPath": "D:\\Documents\\Repos\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.Android\\ProyectoFinal.Android.csproj",
-      "packagesPath": "C:\\Users\\twhit\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Repos\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.Android\\obj\\",
+      "projectPath": "C:\\Users\\XPC\\Desktop\\Universidad\\Icuatri2021\\XamarinFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.Android\\ProyectoFinal.Android.csproj",
+      "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\XPC\\Desktop\\Universidad\\Icuatri2021\\XamarinFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\twhit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -5322,8 +5325,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\Documents\\Repos\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj": {
-              "projectPath": "D:\\Documents\\Repos\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj"
+            "C:\\Users\\XPC\\Desktop\\Universidad\\Icuatri2021\\XamarinFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj": {
+              "projectPath": "C:\\Users\\XPC\\Desktop\\Universidad\\Icuatri2021\\XamarinFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj"
             }
           }
         }
