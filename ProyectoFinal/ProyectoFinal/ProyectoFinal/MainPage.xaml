@@ -1,24 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProyectoFinal.MainPage">
+             xmlns:views="clr-namespace:Chonete.Views"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+               android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.BarItemColor="Black"
+            android:TabbedPage.BarSelectedItemColor="#3F93F6"
+            x:Class="ProyectoFinal.MainPage" 
+    BackgroundColor="{StaticResource Background2}">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-    </StackLayout>
+    <TabbedPage.Children>
+        <NavigationPage Title="Chonete"  
+                        IconImageSource="home">
+            <x:Arguments >
+                <views:Home Title="Chonete" BackgroundColor="{StaticResource BackgroundC}"  />
+            </x:Arguments>
+        </NavigationPage>
 
-</ContentPage>
+        <NavigationPage Title="Carrito" IconImageSource="shopping">
+            <x:Arguments>
+                <views:Carrito Title="Carrito"   BackgroundColor="{StaticResource BackgroundC}" />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Favoritos" IconImageSource="favorite">
+            <x:Arguments>
+                <views:Favoritos Title="Favoritos" BackgroundColor="{StaticResource BackgroundC}" />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Usuario" IconImageSource="User">
+            <x:Arguments>
+                <views:User Title="Usuario" BackgroundColor="{StaticResource BackgroundC}" />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Ajustes" IconImageSource="settings_">
+            <x:Arguments>
+                <views:Configuracion Title="Ajustes" BackgroundColor="{StaticResource BackgroundC}" />
+            </x:Arguments>
+        </NavigationPage>
+
+</TabbedPage>
