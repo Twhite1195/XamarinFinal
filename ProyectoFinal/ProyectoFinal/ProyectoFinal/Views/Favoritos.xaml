@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:vm="clr-namespace:Chonete.ViewModel"
+             xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
+             x:Class="Chonete.Views.Favoritos">
+    <ContentPage.BindingContext>
+        <vm:MainViewModel x:Name="vm"/>
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <Grid RowDefinitions="Auto, Auto, Auto, *" RowSpacing="30" Padding="30">
+
+            
+            <Grid Grid.Row="0" ColumnDefinitions="*, Auto" ColumnSpacing="10">
+                <Label Text="Tus preferencias" TextColor="#2D2942" FontSize="20" FontAttributes="Bold" VerticalOptions="Center" />
+               
+                <Path Fill="White" Aspect="Uniform" VerticalOptions="End" HorizontalOptions="End"
+                  
+                      Data="M9.2067 1.41754C8.68904 0.856094 7.97874 0.546875 7.2065 0.546875C6.62926 0.546875 6.10062 0.72937 5.63522 1.08925C5.40039 1.2709 5.18761 1.49315 5 1.75255C4.81247 1.49323 4.59961 1.2709 4.3647 1.08925C3.89938 0.72937 3.37074 0.546875 2.7935 0.546875C2.02126 0.546875 1.31088 0.856094 0.793228 1.41754C0.281754 1.97243 0 2.73048 0 3.55217C0 4.39789 0.31517 5.17204 0.991821 5.98854C1.59714 6.7189 2.46712 7.46033 3.47458 8.31886C3.81859 8.61206 4.20853 8.9444 4.61342 9.2984C4.72038 9.39209 4.85764 9.44366 5 9.44366C5.14229 9.44366 5.27962 9.39209 5.38643 9.29855C5.79132 8.94447 6.18149 8.61198 6.52565 8.31863C7.53296 7.46025 8.40294 6.7189 9.00826 5.98846C9.68491 5.17204 10 4.39789 10 3.55209C10 2.73048 9.71825 1.97243 9.2067 1.41754Z"/>
+
+                <Grid RowDefinitions="*, *" HeightRequest="190" BackgroundColor="White" Padding="15">
+
+                    <Grid HorizontalOptions="End" VerticalOptions="Center" >
+                        <Ellipse Fill="Red" HeightRequest="20" WidthRequest="20"/>
+                        <Path Fill="White" Aspect="Uniform" VerticalOptions="Center" HorizontalOptions="Center"
+                                    Data="M9.2067 1.41754C8.68904 0.856094 7.97874 0.546875 7.2065 0.546875C6.62926 0.546875 6.10062 0.72937 5.63522 1.08925C5.40039 1.2709 5.18761 1.49315 5 1.75255C4.81247 1.49323 4.59961 1.2709 4.3647 1.08925C3.89938 0.72937 3.37074 0.546875 2.7935 0.546875C2.02126 0.546875 1.31088 0.856094 0.793228 1.41754C0.281754 1.97243 0 2.73048 0 3.55217C0 4.39789 0.31517 5.17204 0.991821 5.98854C1.59714 6.7189 2.46712 7.46033 3.47458 8.31886C3.81859 8.61206 4.20853 8.9444 4.61342 9.2984C4.72038 9.39209 4.85764 9.44366 5 9.44366C5.14229 9.44366 5.27962 9.39209 5.38643 9.29855C5.79132 8.94447 6.18149 8.61198 6.52565 8.31863C7.53296 7.46025 8.40294 6.7189 9.00826 5.98846C9.68491 5.17204 10 4.39789 10 3.55209C10 2.73048 9.71825 1.97243 9.2067 1.41754Z"/>
+                    </Grid>
+                    <StackLayout Grid.Row="1" Orientation="Horizontal">
+                        <Image Source="Aretes"></Image>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2"  Margin="5" Orientation="Horizontal">
+                        <Image Source="Joyeria"></Image>
+                    </StackLayout>
+                    <StackLayout Grid.Row="3"  Margin="5" Orientation="Horizontal">
+                        <Image Source="cuero"></Image>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+            
+                          
+                   
+                    
+             
+                
+            
+        </Grid>
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Chonete.ViewModel"
+             xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
+             x:Class="Chonete.Views.Carrito">
+    <ContentPage.BindingContext>
+        <vm:MainViewModel x:Name="vm"/>
+    </ContentPage.BindingContext>
+    <Grid>
+        <Grid RowDefinitions="Auto, Auto, Auto, *" RowSpacing="30" Padding="30">
+
+            <Grid Grid.Row="1" ColumnDefinitions="*, Auto" ColumnSpacing="15">
+             
+
+            </Grid>
+            <Grid Grid.Row="2" ColumnDefinitions="*, Auto" ColumnSpacing="15">
+               
+                <Image Grid.Column="1" Source="whiteCart.png" VerticalOptions="Center" HeightRequest="20" 
+                       WidthRequest="20"/>
+            </Grid>
+            <CollectionView Grid.Row="3" SelectionMode="Single" ItemsSource="{Binding Products}"
+                            SelectedItem="{Binding SelectedProduct}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="2" VerticalItemSpacing="10" HorizontalItemSpacing="10"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.EmptyView>
+                    <Label Text="No Item found." TextColor="Gray" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </CollectionView.EmptyView>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid RowDefinitions="*, 2.5*" HeightRequest="190" BackgroundColor="White" Padding="15">
+
+                            <Grid HorizontalOptions="End" VerticalOptions="Start" >
+                                                              
+                            </Grid>
+                            <StackLayout Grid.Row="1" Orientation="Horizontal" VerticalOptions="FillAndExpand" 
+                                     HorizontalOptions="FillAndExpand" Padding="10,0,0,0">
+                                <Image Source="{Binding Image}" WidthRequest="45" HorizontalOptions="Start"
+                                       />
+                                <StackLayout Spacing="5" VerticalOptions="CenterAndExpand">
+                                    <Label Text="{Binding Name}" TextColor="#2D2942" FontSize="14"/>
+                                  
+                                    <Label Text="{Binding Price, StringFormat='₡{0}'}" TextColor="#2D2942" FontSize="14" 
+                                           FontAttributes="Bold"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
+    </Grid>
+</ContentPage>
